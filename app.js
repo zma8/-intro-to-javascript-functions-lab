@@ -96,3 +96,40 @@ else if (operation==='divide'||operation==='DIVIDE'){
 }
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+function calculateGrade(grade){
+let letterGrade;
+if (grade>=90){
+letterGrade='A';
+}
+else if(grade>=80){
+letterGrade='B';
+}
+else if(grade>=70){
+letterGrade='C';
+}
+else if(grade>=60){
+letterGrade='D';
+}
+else{
+letterGrade='F';
+}
+return letterGrade;
+}
+
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+function createUsername(fName,lName){
+const firstP=fName.slice(0,3);
+const lastP=lName.slice(0,3);
+const totalLength=fName.length +lName.length;
+
+return firstP+lastP+totalLength;
+}
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+function numArgs(){
+    return arguments.length;
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
